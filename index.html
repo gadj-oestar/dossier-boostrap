@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <!-- ordre de placement 2 -->
+    <script type="importmap">
+      {
+          "imports": {
+              "three": "./node_modules/three/build/three.module.js",
+              "three/addons/": "./node_modules/three/examples/jsm/"
+          }
+      }
+    </script>
+    <!--  3 -->
+<link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/game.js" defer></script>
+
+  
+
+
+
+    <title>Document</title>
+    <style>
+      body{
+        margin:0;
+      }
+
+      .welcome{
+        border: 3px solid black;
+        background-color: aqua;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        opacity: none;
+        position: absolute;
+      }
+      h1{
+        font-size: 3rem;
+          padding-top: 100px;
+        text-align: center;
+      }
+
+     
+    </style>
+</head>
+<body>
+</body>
+<div id="affichage"></div>
+<div id="timer"> compteur: <span id="timervalue"></span></div>
+<div id="score"> points trouvé: <span id="scorevalue"> </span></div>
+
+<div  class="welcome"> <h1> bienvenu à tous  dans le monde incroyable de l'inctoyable Gad <br>
+   clic gauche : pour avacner ; clic droite : rotation <br> cliquez sur la page pour commencer </h1></div>
+
+
+
+ 
+</body>
+</html>
